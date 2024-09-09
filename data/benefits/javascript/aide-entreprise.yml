@@ -1,0 +1,19 @@
+label: Aides au entreprise dans le réemploi des emballages et des contenants
+institution: etat
+description: Accompagner la mise en place de solutions pour diminuer les emballages plastiques mis en marché et favoriser leur réemploi. Elle a pour objectif de réduire la production de déchets et les prélèvements sur les ressources.
+  Cette aide vise à financer des études et expérimentations, ainsi que des investissements.
+conditions:
+  - L'entreprise doit avoir plus de 10 salariés
+link: https://les-aides.fr/aide/cmgf3w/ademe/aides-au-reemploi-des-emballages-et-des-contenants.html
+instructions: https://les-aides.fr/aide/cmgf3w/ademe/aides-au-reemploi-des-emballages-et-des-contenants.html
+prefix: les
+type: float
+unit: €
+periodicite: ponctuelle
+montant: 200
+conditions_generales:
+  - type: age
+    operator: ">="
+    value: 2
+profils: []
+form: https://www.ademe.fr/les-territoires-en-transition/lademe-en-region/

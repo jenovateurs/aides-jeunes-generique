@@ -84,27 +84,27 @@ export default {
   }),
 
   _logementType: new EnumProperty({
-    question: "Êtes-vous ?",
+    question: "L'entreprise est ",
     items: [
       {
         label: "Locataire",
         value: LogementCategory.Locataire,
-        hint: "figurant sur le bail, en foyer ou en résidence",
+        hint: "figurant sur le bail",
       },
       {
         label: "Propriétaire",
         value: LogementCategory.Proprietaire,
-        hint: "ou en location-accession",
+        // hint: "ou en location-accession",
       },
       {
         label: "Hébergé ou hébergée",
         value: LogementCategory.Heberge,
-        hint: "chez vos parents, chez un particulier ou en logement de fonction",
+        hint: "par un incubateur ou une pépinière d'entreprise",
       },
       {
-        label: "Sans domicile stable",
+        label: "Sans locaux",
         value: LogementCategory.SansDomicile,
-        hint: "ou domiciliation administrative",
+        hint: "avec une boite de domiciliation",
       },
     ],
   }),

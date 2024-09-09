@@ -15,11 +15,11 @@ export enum ChapterName {
 }
 
 export enum ChapterLabel {
-  MonProfil = "Mon profil",
-  MonFoyer = "Mon foyer",
-  MonLogement = "Mon logement",
-  MesRevenus = "Mes revenus",
-  MesProjets = "Mes projets",
+  MonProfil = "L'entreprise",
+  MonFoyer = "Composition",
+  MonLogement = "Localisation",
+  MesRevenus = "Chiffre d'affaires",
+  MesProjets = "Projets",
   Recapitulatif = "Récapitulatif",
   Resultats = "Mes résultats",
 }

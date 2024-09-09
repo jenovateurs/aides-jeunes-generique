@@ -37,39 +37,31 @@ export default {
   }),
 
   activite: new EnumProperty({
-    question: ({ individu }) => {
-      return `${IndividuMethods.label(individu, "être")} ?`
+    question: () => {
+      return `Quel est le status de votre entreprise ?`
     },
     items: [
       {
         value: Activite.Etudiant,
-        label: "En étude ou en alternance",
+        label: "SARL",
       },
       {
         value: Activite.Salarie,
-        label: "Salarié ou salariée",
+        label: "EURL",
       },
       {
         value: Activite.Independant,
-        label: "Indépendant ou indépendante",
+        label: "SAS",
       },
       {
         value: Activite.Chomeur,
-        label: "Inscrit ou inscrite comme demandeur d’emploi",
-      },
-      {
-        value: Activite.Retraite,
-        label: "Retraité ou retraitée",
-        isRelevant: ({ individu, periods }) =>
-          IndividuMethods.age(individu, periods.today.value) > 30,
+        label: "SASU",
       },
       {
         value: Activite.Inactif,
-        label: "Autre",
+        label: "SNC",
       },
     ],
-    moreInfo:
-      "Lorsque vous étudiez et que vous travaillez, vous devez sélectionner « En étude ou en alternance ».",
   }),
 
   service_civique: new BooleanProperty({
@@ -289,7 +281,7 @@ export default {
   date_naissance: new DateProperty({
     question: ({ individu }) => {
       return individu._role === "demandeur"
-        ? `Quelle est votre date de naissance ?`
+        ? `Quelle est sa date de création ?`
         : `Quelle est la date de naissance ${IndividuMethods.label(
             individu,
             "préposition"
@@ -429,7 +421,7 @@ export default {
   nationalite: new EnumProperty({
     question: ({ individu }) => {
       return individu._role === "demandeur"
-        ? "Quelle est votre nationalité ?"
+        ? "Quelle est sa nationalité ?"
         : `Quelle est la nationalité ${IndividuMethods.label(
             individu,
             "préposition"
